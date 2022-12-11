@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Байкал</title>
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet" href="styleBeautifulPlace.css">
+        <link rel="icon" type="image/jpg" href="logo2.jpg">      
+    </head>
+    <body>
+        <header>
+            <img src="logo2.jpg" alt="Байкал" height="80">
+            <input id="menu-toggle" type="checkbox" />
+            <label class="menu-btn" for="menu-toggle">
+                <span></span>
+            </label>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">ГЛАВНАЯ</a>
+                    <li><a href="aboutLake.html">О БАЙКАЛЕ</a>
+                    <li><a href="interestingFacts.html">ИНТЕРЕСНЫЕ ФАКТЫ</a>
+                    <li><a href="gallery.html">ГАЛЕРЕЯ</a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="place">
+                <div class="container">
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 5</div>
+                            <img src="listvyanka.jpg">
+                        </div>
+                        <div class="mySlides">
+                        <div class="numbertext">2 / 5</div>
+                            <img src="shaman_kamen.jpg">
+                        </div>
+                        <div class="mySlides">
+                        <div class="numbertext">3 / 5</div>
+                            <img src="museum.jpg">
+                        </div>
+                        <div class="mySlides">
+                        <div class="numbertext">4 / 5</div>
+                            <img src="nerpinariy.jpg">
+                        </div>
+                        <div class="mySlides">
+                        <div class="numbertext">5 / 5</div>
+                            <img src="talci.jpg">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        <div class="caption-container">
+                        <p id="caption"></p>
+                        </div>
+                        <div class="row">
+                        <div class="column">
+                            <img class="demo cursor" src="listvyanka.jpg" onclick="currentSlide(1)" alt="Листвянка">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="shaman_kamen.jpg" onclick="currentSlide(2)" alt="Шаман-камень">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="museum.jpg" onclick="currentSlide(3)" alt="Байкальский музей">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="nerpinariy.jpg" onclick="currentSlide(4)" alt="Нерпинарий">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="talci.jpg" onclick="currentSlide(5)" alt="Тальцы">
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <h2>Листвянка</h2>
+                    <p>Для большинства туристов, приехавших на Байкал, поселок Листвянка становится исходной точкой для путешествий. Из Иркутска легко добраться автобусом или маршрутными такси от автовокзала. Здесь хорошо развита инфраструктура, можно приезжать в любое время года.</p>
+                    <p>При въезде в Листвянку у истока реки Ангары виден одиноко выглядывающий голец из воды — Шаман-камень. По преданию, его швырнул вслед сбежавшей к Енисею дочери разгневанный отец Байкал. Буряты верили в силу камня, сюда привозили обвиняемого в преступлении человека и оставляли на ночь наедине с духами. Некоторые не выдерживали испытания, сходили с ума или исчезали, но если человек выживал — его отпускали с миром.</p>
+                    <p>Единственный в мире Байкальский музей с дендропарком расположен в Листвянке. Здесь можно увидеть экземпляры озерной фауны: омули, сиги, осетры, нерпы. На втором этаже музея — кабинет, где можно рассмотреть мельчайшие организмы под микроскопом. Есть возможность увидеть лежбища нерп на Ушканьих островах с помощью веб-камер, организовано интерактивное погружение на дно озера.</p>
+                    <p>Умилительное шоу нерп можно посмотреть в Листвянском нерпинарии.</p>
+                    <p>По дороге в поселок можно заехать в музей под открытым небом "Тальцы". Здесь представлены лучшие образцы архитектуры и предметы быта, отражающие культуру и обычаи бурятов, эвенков, русских и тофов, начиная с 17 столетия.</p>
+                </div>
+            </div>
+            <div class="place2">
+                <div class="container">
+                    <div class="mySlides2">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="tp1.jpg">
+                    </div>
+                    <div class="mySlides2">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="tpmechta.jpg">
+                    </div>
+                    <div class="mySlides2">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="tp2.jpg">
+                    </div>
+                    <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+                    <div class="caption-container">
+                        <p id="caption2"></p>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <img class="demo2 cursor" src="tp1.jpg" onclick="currentSlide2(1)" alt="Тажеранские пещеры">
+                        </div>
+                        <div class="column">
+                            <img class="demo2 cursor" src="tpmechta.jpg" onclick="currentSlide2(2)" alt="Пещера Мечта">
+                        </div>
+                        <div class="column">
+                            <img class="demo2 cursor" src="tp2.jpg" onclick="currentSlide2(3)" alt="Тажеранские пещеры">
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <h2>Тажеранские пещеры</h2>
+                    <p>К югу от Ольхона и Малого моря простираются горные породы, изрезанные пещерами, прозванные Тажеранскими. Их можно по праву причислить к самым интересным и красивым местам Байкала. Крупнейшая из них — пещера Мечта, ее размеры позволяют ходить в полный рост. Самый красивый зал — Тронный, внутри которого стоит возвышение, действительно напоминающее трон. Байдинские холодные пещеры примечательны своими археологическими находками. Здесь были обнаружены стоянки древних людей, фрагменты глиняной посуды, наконечники для стрел и другие предметы. Древние наскальные рисунки можно увидеть возле пещеры Ая.</p>
+                    <p>Пещеры расположены между паромной переправой на Ольхон и селением Еланцы. Добраться можно на автомобиле по дороге от Сахюрты.</p>
+                </div>
+            </div>
+            <div class="place">
+                <div class="container">
+                    <div class="mySlides3">
+                        <div class="numbertext">1 / 2</div>
+                        <img src="olhon.jpg">
+                    </div>
+                    <div class="mySlides3">
+                        <div class="numbertext">2 / 2</div>
+                        <img src="img7.jpg">
+                    </div>
+                    <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides3(1)">&#10095;</a>
+                    <div class="caption-container">
+                        <p id="caption3"></p>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <img class="demo3 cursor" src="olhon.jpg" onclick="currentSlide3(1)" alt="Остров Ольхон">
+                        </div>
+                        <div class="column">
+                            <img class="demo3 cursor" src="img7.jpg" onclick="currentSlide3(2)" alt="Скала Шаманка">
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="content">
+                    <h2>Остров Ольхон</h2>
+                    <p>Ольхон — это самый известный остров на Байкале и одно из самых интересных мест на озере. По преданию, на Ольхоне покоится великий Чингисхан. От Иркутска до поселка Хужир можно добраться на автобусе, теплоходе или автомобильным транспортом через паромную переправу в поселке Сахюрта.</p>
+                    <p>Главная визитка острова — скала Шаманка и 13 столбов вокруг нее. Расположены эти объекты возле поселка Хужир на мысе Бурхан. В древности скала считалась местом обитания духов, детям и женщинам даже близко не разрешалось к ней подходить. В скале находится пещера, в которой, по верованиям бурятов, жил сам хозяин Байкала. </p>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script src="scriptBeautifulPlace.js"></script>
+</html>
